@@ -19,10 +19,6 @@ async function loadData() {
   let sentencesRes = await fetch("./sentences.json");
   sentencesData = await sentencesRes.json();
 
-  // загружаем слова
-  let wordsRes = await fetch("./words.json");
-  wordsPool = await wordsRes.json();
-
   // запускаем игру
   initGame();
   
